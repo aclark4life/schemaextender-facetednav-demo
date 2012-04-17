@@ -1,7 +1,7 @@
 Simple example
 ==============
 
-*Copied from the archetypes.schemaextender README*
+*From the archetypes.schemaextender README*
 
 As an example we will add a simple boolean field to the standard
 Plone document type. First we need to create a field class::
