@@ -27,9 +27,6 @@ class PageExtender(object):
         MyBooleanField("super_power",
         widget=BooleanWidget(
             label="This page has super powers")),
-            ]
-
-    fields = [
         MyStringField("super_power2",
         widget=StringWidget(
             label="This page has super powers too")),
