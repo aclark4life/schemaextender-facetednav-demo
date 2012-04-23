@@ -58,3 +58,5 @@ configure.zcml (assuming you put the code above in a file extender.py)::
         <include package="archetypes.schemaextender" />
         <adapter factory=".extender.PageExtender" />
     </configure>
+
+.. image:: screenshot.png
