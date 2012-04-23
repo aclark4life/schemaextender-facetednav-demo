@@ -59,4 +59,4 @@ configure.zcml (assuming you put the code above in a file extender.py)::
         <adapter factory=".extender.PageExtender" />
     </configure>
 
-.. image:: screenshot.png
+.. image:: https://github.com/aclark4life/schemaextender-test/raw/master/screenshot.png
