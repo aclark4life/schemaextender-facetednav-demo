@@ -12,7 +12,7 @@ from zope.interface import implements
 from zope.schema.vocabulary import SimpleVocabulary
 
 
-def MyVocabFactory():
+def MyVocabularyFactory(context):
    return SimpleVocabulary.fromValues(['one', 'two', 'three'])
 
 
@@ -47,7 +47,7 @@ class PageExtender(object):
         ),
 
         MyLinesField("super_power3",
-            vocabulary=MyVocabFactory(),
+            vocabulary_factory='schema_extender_test.MyVocabularyFactory',
             widget=MultiSelectionWidget(
                 label="This page has super powers three"
             )
