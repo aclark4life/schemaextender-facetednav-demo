@@ -13,7 +13,7 @@ from zope.schema.vocabulary import SimpleVocabulary
 
 
 def MyVocabularyFactory(context):
-   return SimpleVocabulary.fromValues(['one', 'two', 'three'])
+    return SimpleVocabulary.fromValues(context.aq_parent.getProperty('super_power3'))
 
 
 class MyBooleanField(ExtensionField, BooleanField):
@@ -46,7 +46,7 @@ class PageExtender(object):
             )
         ),
 
-        MyLinesField("super_power3",
+        MyStringField("super_power3",
             vocabulary_factory='schema_extender_test.MyVocabularyFactory',
             widget=MultiSelectionWidget(
                 label="This page has super powers three"
