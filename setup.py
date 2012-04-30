@@ -4,6 +4,6 @@ import os
 
 
 setup (
-    name='schema_extender_test',
+    name='schemaextender_facetednav_demo',
     packages=find_packages(),
 )
